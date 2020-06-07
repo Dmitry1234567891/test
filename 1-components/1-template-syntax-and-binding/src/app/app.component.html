@@ -68,10 +68,11 @@
 
   <div class="content-wrap">
     <div class="content-block">
-      <app-shop-card></app-shop-card>
+      <app-shop-card [product]="Products" (addToCart)="addProduct($event)"></app-shop-card>
     </div>
-    <div class="terminal">
-      <pre></pre>
+    <div>
+      <pre [innerHTML]="chosenProduct">info</pre>
     </div>
   </div>
+<!--  <div (click)="addProduct1($event)">Click</div>-->
 </div>
